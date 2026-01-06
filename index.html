@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>PMPML</title>
+    <link rel="icon" href="pmpml.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+     @media (max-width: 700px) {
+            body {
+                background-color: rgb(253, 208, 208);
+            
+                margin: auto;
+                padding: 0%;
+            }
+            .left-half-line-circle {
+                width: 12.7px;
+                height: 28px;
+                /* Full height for vertical half-circle */
+                background-color: rgb( 253, 208, 208 );
+                /* Change color as needed */
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                position: absolute;
+                right: 0;
+                /* Align to right side */
+                margin: -21px 0 0 341px;
+            }
+
+            .right-half-line-circle {
+                width: 12px;
+                height: 27px;
+                /* Full height for vertical half-circle */
+                background-color: rgb( 253, 208, 208 );
+                /* Change color as needed */
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                position: absolute;
+                left: 0;
+                /* Align to left side */
+                margin: -22px 0 0 0;
+            }
+
+            .main {
+                display: flex;
+                margin-top: 10px;
+            }
+
+            .all {
+                text-decoration: underline;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0 0 0 75%;
+            }
+
+            .crossimg {
+                height: 15px;
+                margin: 0 0 0 -88%;
+            }
+
+            .contain {
+                height: 440px;
+                width: 90%;
+                margin: 105px 25px 30px 20px;
+                border-radius: 15px;
+                background-color: rgb(207, 46, 46);
+                display: flex;
+                position: relative;
+            }
+
+            .mainname {
+                height: 13px;
+            }
+
+            .marathi {
+                color: #fff;
+                font-size: 19px;
+                font-family: system-ui, sans-serif;
+                text-align: center;
+                margin-top: 8.5px;
+            }
+
+            .textcontain {
+                background-color: #fff;
+                height: 455px;
+                width: 100.6%;
+                margin-top: -14px;
+                /* Adjusted margin to create a 4px gap */
+                position: relative;
+                overflow: hidden;
+            }
+
+            .pif {
+                display: flex;
+                margin: 5px 0 0 10px;
+            }
+
+            .passtype {
+                width: 59.3333%;
+                height: 60px;
+            }
+
+            .passt {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 11px;
+                color: gray;
+                margin-left: 8px;
+            }
+
+            .pmc {
+                position: absolute;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: -10px 0 0 6px;
+                font-size: 21px;
+            }
+            .pmc2 {
+                position: absolute;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: -10px 0 0 4px;
+                font-size: 21px;
+            }
+            .pmc23 {
+                position: absolute;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: 10px 0 0 5px;
+                font-size: 21px;
+            }
+
+
+            .id {
+                width: 55.3333%;
+            }
+
+            .rs {
+                width: 33.3333%;
+            }
+
+            .hirizontal-line {
+                margin-top: 4px;
+                color: rgb(207, 207, 207);
+                width: 100%;
+                text-align: center;
+            }
+
+
+            .booktime {
+                display: flex;
+                height: 50px;
+                margin-top: -15px;
+            }
+
+            .time,
+            .valid {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ttt {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 12px;
+                color: gray;
+                margin-top: 20px;
+                margin-left: -60px;
+            }
+
+            .sss {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                margin-top: -6px;
+                font-size: 14.5px;
+            }
+
+            .number {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                margin-top: 30px;
+                color: rgb(117, 117, 117);
+                font-size: 14.5px;
+            }
+
+            .logoo img {
+                height: 120px;
+                margin: 82px 0 0 110px;
+                animation: zoomInOut 2s ease-in-out infinite;
+            }
+
+            @keyframes zoomInOut {
+
+                0%,
+                100% {
+                    transform: scale(0.8);
+                }
+
+                50% {
+                    transform: scale(1.5);
+                }
+            }
+
+            .onedayname {
+                height: 20px;
+                width: 94.5%;
+                text-align: center;
+                position: absolute;
+                transform: translateX(-50%);
+                padding: 5px 10px;
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16.5px;
+                background-color: rgb(207, 46, 46);
+                margin-top: 226px;
+                margin-left: 177px;
+                background-color: transparent red;
+            }
+
+            .container {
+                background: white;
+                border-radius: 10px;
+                width: 353.5px;
+                margin-left: 20px;
+                display: flex;
+                height: 50px;
+                background-color: rgb(229, 231, 231);
+            }
+            .ex{
+                font-family: sans-serif;
+                font-size: 15px;
+                margin: 27px 0 0 118px;
+            }
+            .timer {
+                font-size: 24px;
+                margin: 27px 0 0 5px;
+                font-family: sans-serif;
+                font-size: 15px;
+            }
+
+
+            .barcode {
+                margin-top: 80px;
+                display: flex;
+                width: 89%;
+                height: 35px;
+                margin-left: 23px;
+                border: 2px solid rgb(99, 246, 99);
+                border-radius: 5px;
+                background-color: rgb(228, 250, 228);
+
+            }
+
+            .codeimg {
+                height: 23px;
+                margin: 8px 0 0 90px;
+            }
+
+            .QR {
+                color: rgb(30, 189, 38);
+                font-family: sans-serif;
+                margin: 10px 0 0 14px;
+
+            }
+
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .modal-content {
+                display: block;
+                margin: 220px 0 0 95px;
+                max-width: 85%;
+                max-height: 85%;
+            }
+
+            .close {
+                position: absolute;
+                top: 215px;
+                right: 80px;
+                color: rgb(0, 0, 0);
+                font-size: 39px;
+                cursor: pointer;
+            }
+        }
+</style>
+
+<body>
+    <div class="main">
+        <h6 class="all">All passes</h6>
+        <img class="crossimg" src="https://www.pngkey.com/png/full/215-2155436_png-file-svg-cross-mark-png-black.png"
+            alt="image">
+    </div>
+    <div class="contain">
+        <div class="mainname">
+            <p class="marathi">पुणे महानगर परिवहन महामंडळ लि.</p>
+            <div class="textcontain">
+                <div class="pif">
+                    <div class="passtype">
+                        <p class="passt">Pass Type</p>
+                        <b class="pmc"><strong>All Route</strong></b>
+                    </div>
+                    <div class="id">
+                        <p class="passt">ID</p>
+                        <b class="pmc"><strong><b>1923</b></strong></b>
+                    </div>
+                    <div class="rs">
+                        <p class="passt">Fare</p>
+                        <b class="pmc2"><strong>₹150.8</strong></b>
+                        <b class="pmc23"><strong>3</strong></b>
+                    </div>
+                </div>
+                <div class="hirizontal-line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                </div>
+                <div class="left-half-line-circle"></div>
+                <div class="right-half-line-circle"></div>
+                <div class="booktime">
+                    <div class="time">
+                        <p class="ttt">Booking Time</p>
+                        <b class="sss"><strong>06 Jan, 26 | 06:15 AM</strong></b>
+                    </div>
+                    <div class="valid">
+                        <p class="ttt">Validity Time</p>
+                        <b class="sss"><strong>06 Jan, 26 | 11:59 PM</strong></b>
+                    </div>
+                </div>
+                <div class="number">3210010612MHP8HD</div>
+                <div class="hirizontal-line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    - </div>
+                <div class="logoo">
+                    <img src="https://play-lh.googleusercontent.com/lFSZVZeLbHkZN9Iz7kGqJ0aVEEy_AaZYPAX9lyomfZvNCARgoihUKm4oV6z4mlAl_hTV"
+                        alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="onedayname"><strong>One Day Pass</strong> </div>
+
+    </div>
+    <div class="container">
+        <strong class="ex">Expiry :</strong>
+        <div class="timer" id="clock">00:00:00</div>
+    </div>
+    <div class="barcode" id="openModal">
+        <img class="codeimg"
+            src="https://png.pngtree.com/png-clipart/20231015/original/pngtree-green-qr-code-scanning-photo-png-image_13307119.png"
+            alt="Barcode">
+        <strong class="QR">Show QR Code</strong>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSwpxnVWkwbqKhTBpDxWT-xt4yMkd_TDSrb1ol--gD4sXjnb8zkjCdHgoLYY4cVeL4AW4&usqp=CAU"
+            alt="Image" />
+    </div>
+
+
+</body>
+<script>
+    function updateClock() {
+        const now = new Date(); // Current device time
+        const midnight = new Date();
+        midnight.setHours(23, 59, 59, 999); // Set target time to 11:59:59 PM
+        
+        let diff = midnight - now; // Difference in milliseconds
+        
+        if (diff > 0) {
+            let hrs = Math.floor(diff / (1000 * 60 * 60));
+            let mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            let secs = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            // Formatting: Add leading zero if necessary
+            hrs = hrs < 10 ? '0' + hrs : hrs;
+            mins = mins < 10 ? '0' + mins : mins;
+            secs = secs < 10 ? '0' + secs : secs;
+            
+            document.getElementById('clock').textContent = hrs + ':' + mins + ':' + secs;
+        } else {
+            document.getElementById('clock').textContent = "00:00:00";
+            clearInterval(timer);
+        }
+    }
+    
+    updateClock();
+    let timer = setInterval(updateClock, 1000);
+
+    // image button
+    document.getElementById("openModal").addEventListener("click", function () {
+        document.getElementById("imageModal").style.display = "block";
+    });
+
+    document.getElementById("closeModal").addEventListener("click", function () {
+        document.getElementById("imageModal").style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === document.getElementById("imageModal")) {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    });
+
+</script>
+
+
+</html>
